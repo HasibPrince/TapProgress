@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="morning_step_1">
+        <![CDATA[ <font color=#D81B60>Step 1: <font color=#000000>Clear Your face with your customize cleanser]]>
+    </string>
+
+    <string name="morning_step_2">
+        <![CDATA[ <font color=#D81B60>Step 2: <font color=#000000>Apply your customized moisturizer]]>
+    </string>
+
+    <string name="morning_step_3">
+        <![CDATA[ <font color=#D81B60>Step 3: <font color=#000000>Apply your favorite oil-free makeup (optional)]]>
+    </string>
+
+
+    <string name="evening_step_1">
+        <![CDATA[ <font color=#D81B60>Step 1: <font color=#000000>Clear Your face with your customize cleanser]]>
+    </string>
+
+    <string name="evening_step_2">
+        <![CDATA[ <font color=#D81B60>Step 2: <font color=#000000>Apply your customized treatment cream]]>
+    </string>
+</resources>
