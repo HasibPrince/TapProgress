@@ -10,9 +10,15 @@
         android:id="@+id/tapProgress"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        app:tpArc_strokeWidth= "5dp"
+        app:tpArc_strokeWidth= "15dp"
+        app:tpArc_Distance="10dp"
         app:tpArc_solidArcColor= "@color/colorPrimaryDark"
+        app:tpArc_duration="5000"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

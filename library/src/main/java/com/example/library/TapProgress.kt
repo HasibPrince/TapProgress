@@ -129,9 +129,9 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
         heightRect = widthRect * scale
         canvas?.drawArc(
             -130f,//70f,
-            strokeWidth / 2,
+            strokeWidth / 2 ,
             width.toFloat() + 130,//width.toFloat() - 70,
-            height.toFloat() + 70 ,//height.toFloat(), //heightRect + 20,
+            height.toFloat() +  (height.toFloat()) - (strokeWidth / 2) ,//height.toFloat(), //heightRect + 20,
             180f,
             startAngle,
             false,
@@ -141,7 +141,7 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
             -130f + distanceBetweenArc,
             (strokeWidth) + distanceBetweenArc,
             width.toFloat() + 130 - distanceBetweenArc,
-            height.toFloat() +  (height.toFloat() / 2) - (strokeWidth + distanceBetweenArc),
+            height.toFloat() +  (height.toFloat()) - (strokeWidth + distanceBetweenArc),
             0f,
             -180f,
             false,
