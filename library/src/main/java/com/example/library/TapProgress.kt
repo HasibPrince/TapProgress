@@ -30,6 +30,8 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
     private var solidArcColor = ContextCompat.getColor(context!!, R.color.colorAccent)
     private var strokeArcColor = ContextCompat.getColor(context!!, R.color.colorAccent)
 
+    private var tapProgressCompletedListener: TapProgressCompletedListener? =null
+
     init {
         val attributes =
             context!!.obtainStyledAttributes(attrs, R.styleable.TapProgress)
@@ -39,6 +41,10 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
         shadow = attributes.getBoolean(R.styleable.TapProgress_tpArc_shoadow, true)
         solidArcColor = attributes.getColor(R.styleable.TapProgress_tpArc_solidArcColor, ContextCompat.getColor(context, R.color.colorAccent))
         strokeArcColor = attributes.getColor(R.styleable.TapProgress_tpArc_strokeArcColor, ContextCompat.getColor(context, R.color.colorAccent))
+    }
+
+    fun setTapProgressCompletedListener(listener: TapProgressCompletedListener){
+        this.tapProgressCompletedListener = listener
     }
 
     override fun onTouch(p0: View?, event: MotionEvent?): Boolean {
@@ -83,6 +89,7 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
     private fun updateProgress() {
         var diff = System.currentTimeMillis() - startTime
         if (diff > duration) {
+            tapProgressCompletedListener?.onTapProgressCompleted()
             cancelTask()
             return
         }
@@ -165,4 +172,7 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
 //        canvas?.drawArc(0f, 50f, width.toFloat(), 150f, 180f, 180f, false, solidPaint2)
     }
 
+    interface TapProgressCompletedListener{
+        fun onTapProgressCompleted()
+    }
 }
