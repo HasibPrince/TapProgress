@@ -2,13 +2,13 @@
 
 [![](https://jitpack.io/v/HasibPrince/TapProgress.svg)](https://jitpack.io/#HasibPrince/TapProgress)
 
-TapProgress helps to identify intentional Users' interaction. This libary is used for any users' secured operation to prevent unintentional users' interaction. Sucha as: Banking operation.
+TapProgress is used for any secured operation to prevent unintentional users' interaction. Sucha as: Banking operation.
 
 ![](tap-progress.gif)
 
 Setup
 ------
-PinEntryEditText required minSdkVersion 21 and androidx
+TapProgress required minSdkVersion 21 and androidx
 
 Add it in your project level build.gradle at the end of repositories:
 
@@ -45,4 +45,20 @@ Usage
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+```
+To get callback of progress completed:
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        tapProgress?.setTapProgressCompletedListener(object : TapProgress.TapProgressCompletedListener{
+            override fun onTapProgressCompleted() {
+                //write your code
+            }
+
+        })
+    }
+}
 ```
