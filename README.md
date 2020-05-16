@@ -18,7 +18,7 @@ allprojects {
   ...
 	maven { url 'https://jitpack.io' }
  }
- }
+}
 ```
 Add the dependency in your app.gradle file:
 ```
