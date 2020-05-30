@@ -23,14 +23,14 @@ allprojects {
 Add the dependency in your app.gradle file:
 ```
 dependencies {
-	implementation 'com.github.HasibPrince:TapProgress:1.0.2'
+	implementation 'com.github.HasibPrince:TapProgress:1.0.6'
 }
 ```
 
 Usage
 --------
 ```xml
-<com.example.library.TapProgress
+<com.hasib.library.TapProgress
         android:id="@+id/tapProgress"
         android:layout_width="match_parent"
         android:layout_height="150dp"
