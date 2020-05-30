@@ -1,8 +1,8 @@
-package com.example.tapprogress
+package com.hasib.library
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.library.TapProgress
+import com.example.library.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

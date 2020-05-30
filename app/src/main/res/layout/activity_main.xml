@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.hasib.library.MainActivity">
 
-    <com.example.library.TapProgress
+    <com.hasib.library.TapProgress
         android:id="@+id/tapProgress"
         android:layout_width="match_parent"
         android:layout_height="150dp"

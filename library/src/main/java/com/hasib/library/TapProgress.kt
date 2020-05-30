@@ -1,4 +1,4 @@
-package com.example.library
+package com.hasib.library
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -39,8 +39,14 @@ class TapProgress(context: Context?, attrs: AttributeSet?) : View(context, attrs
         strokeWidth = attributes.getDimension(R.styleable.TapProgress_tpArc_strokeWidth, 10f)
         duration = attributes.getInteger(R.styleable.TapProgress_tpArc_duration, 2000)
         shadow = attributes.getBoolean(R.styleable.TapProgress_tpArc_shoadow, true)
-        solidArcColor = attributes.getColor(R.styleable.TapProgress_tpArc_solidArcColor, ContextCompat.getColor(context, R.color.colorAccent))
-        strokeArcColor = attributes.getColor(R.styleable.TapProgress_tpArc_strokeArcColor, ContextCompat.getColor(context, R.color.colorAccent))
+        solidArcColor = attributes.getColor(
+            R.styleable.TapProgress_tpArc_solidArcColor, ContextCompat.getColor(context,
+                R.color.colorAccent
+            ))
+        strokeArcColor = attributes.getColor(
+            R.styleable.TapProgress_tpArc_strokeArcColor, ContextCompat.getColor(context,
+                R.color.colorAccent
+            ))
     }
 
     fun setTapProgressCompletedListener(listener: TapProgressCompletedListener){

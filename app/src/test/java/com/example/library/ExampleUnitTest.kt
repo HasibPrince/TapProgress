@@ -1,4 +1,4 @@
-package com.example.tapprogress
+package com.example.library
 
 import org.junit.Test
 
