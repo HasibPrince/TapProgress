@@ -20,10 +20,10 @@ allprojects {
  }
 }
 ```
-Add the dependency in your app.gradle file:
+Add the dependency in your app level build.gradle file:
 ```
 dependencies {
-	implementation 'com.github.HasibPrince:TapProgress:1.0.6'
+	implementation 'com.github.HasibPrince:TapProgress:{latest_version}'
 }
 ```
 
