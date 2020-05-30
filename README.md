@@ -23,7 +23,7 @@ allprojects {
 Add the dependency in your app.gradle file:
 ```
 dependencies {
-	implementation 'com.github.HasibPrince:TapProgress:Tag'
+	implementation 'com.github.HasibPrince:TapProgress:1.0.2'
 }
 ```
 
